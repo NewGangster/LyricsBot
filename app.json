@@ -1,5 +1,5 @@
 {
-    "name": "Lyrics-Search-Bot",
+    "name": "LyricsBot",
     "description": "A Simple Telegram Bot That Can Search Lyrics Of Any Song With Pyrogram Framework.",
     "repository": "https://github.com/NewGangster/LyricsBot",
     "keywords": ["lyrics", "lines", "song", "search", "find"],
