@@ -20,7 +20,7 @@ Ek = Client(
 @Ek.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     TEXT = "Hai {} \n\n**I Am Lyrics Search Bot. Send Me A Song Name, I Will Give You The Lyrics. ** \n\nFor Know More /help"
-    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("Support Group ⭕️", url = "https://telegram.me/ekbotz_support")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/M-fazin/Lyrics-Search-Bot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/M-fazin/Lyrics-Search-Bot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/M-fazin/")]])
+    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("Support Group ⭕️", url = "https://telegram.me/ekbotz_support")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/NewGangster/LyricsBot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/NewGangster/LyricsBot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/NewGangster/")]])
     await update.reply_text(
         text=TEXT.format(update.from_user.mention),
         reply_markup=BUTTONS,
@@ -31,7 +31,7 @@ async def start(bot, update):
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
     HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @EKBOTZ_UPDATE "
-    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/M-fazin/Lyrics-Search-Bot")]])
+    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/NewGangster/LyricsBot")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
         reply_markup=HELP_BUTTON,
