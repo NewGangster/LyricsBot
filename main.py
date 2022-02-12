@@ -20,7 +20,7 @@ Ek = Client(
 @Ek.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     TEXT = "Hai {} \n\n**I Am Lyrics Search Bot. Send Me A Song Name, I Will Give You The Lyrics. ** \n\nFor Know More /help"
-    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://t.me/gangsterbotschannel"),InlineKeyboardButton("Support Group ⭕️", url = "https://telegram.me/ekbotz_support")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/NewGangster/LyricsBot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/NewGangster/LyricsBot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/NewGangster/")]])
+    BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("Channel 🔰", url = "https://t.me/gangsterbotschannel"),InlineKeyboardButton("Support Group ⭕️", url = "https://t.me/gangsterofficialbots")],[InlineKeyboardButton("Repo 🗂️", url = "https://github.com/NewGangster/LyricsBot"),InlineKeyboardButton("Deploy 🗃️", url = "https://heroku.com/deploy?template=https://github.com/NewGangster/LyricsBot")],[InlineKeyboardButton("Developer 💡", url = "https://github.com/NewGangster/")]])
     await update.reply_text(
         text=TEXT.format(update.from_user.mention),
         reply_markup=BUTTONS,
