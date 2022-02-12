@@ -6,8 +6,7 @@
 ## Deploy
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NewGangster/LyricsBot)
-<img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
+
 
 
 ## Variables
