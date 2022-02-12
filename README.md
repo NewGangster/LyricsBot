@@ -17,7 +17,7 @@ A Simple Telegram Bot That Can Extract Lyrics Of Any Songs
 
 ## Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/M-fazin/Lyrics-Search-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NewGangster/LyricsBot-Search-Bot)
 
 ---
 
@@ -46,24 +46,4 @@ Copyright (c) 2021 Muhammed Fazin EK [MIT License](/LICENSE)
 
 ---
 
-## Credits
-
-- [M-fazin](https://github.com/M-fazin) (Developer & Owner)
-- [Pyrogram](https://pyrogram.org) (Library)
-- [Aditya](https://github.com/xditya) For His [API](https://apis.xditya.me/lyrics?song=)
-
----
-
-## Notice
-
-`Kangers Stay Away. Don't Kang Without Permission & Credits`
-
----
-
-## Contribution
-
-```
-Contributors are always welcome
-```
-
----
+## 
