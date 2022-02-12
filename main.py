@@ -30,8 +30,8 @@ async def start(bot, update):
 	
 @Ek.on_message(filters.private & filters.command(["help"]))
 async def help(bot, update):
-    HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @EKBOTZ_UPDATE "
-    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://telegram.me/EKBOTZ_UPDATE"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/NewGangster/LyricsBot")]])
+    HELP = "Hai {} \n\n**There Is Nothing To Know More.** \n- Send Me A Song Name, I Will Give Lyrics Of That Song. \nBot By @gangsterbotschannel "
+    HELP_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("🧑‍💻 Channel", url = "https://t.me/gangsterbotschannel"),InlineKeyboardButton("🗃️ Source Code", url = "https://github.com/NewGangster/LyricsBot")]])
     await update.reply_text(
         text=HELP.format(update.from_user.mention),
         reply_markup=HELP_BUTTON,
@@ -41,7 +41,7 @@ async def help(bot, update):
 	
 @Ek.on_message(filters.private & filters.command(["about", "source", "repo"]))
 async def about(bot, update):
-    ABOUT = "**🤖 Bot :** Lyrics Search Bot\n\n**🧑‍💻 Developer :** [M-fazin](https://github.com/M-fazin)\n\n**💻 Channel :** @EKBOTZ_UPDATE\n\n**☎️ Support :** @ekbotz_support \n\n**🗂️ Source Code :** [Lyrics Search Bot](https://github.com/M-fazin/Lyrics-Search-Bot)\n\n**⚙️ Language :** Python 3\n\n**🛡️ Framework :** Pyrogram"
+    ABOUT = "**🤖 Bot :** Lyrics Search Bot\n\n**🧑‍💻 Developer :** [M-fazin](https://github.com/M-fazin)\n\n**💻 Channel :** @gangsterbotschannel\n\n**☎️ Support :** @ekbotz_support \n\n**🗂️ Source Code :** [Lyrics Search Bot](https://github.com/NewGangster/LyricsBot)\n\n**⚙️ Language :** Python 3\n\n**🛡️ Framework :** Pyrogram"
     await update.reply_text(
 	text=ABOUT,
 	disable_web_page_preview=True,
@@ -71,7 +71,7 @@ def lyrics(song):
         fin = search(song)
         text = f'**🎶 Successfully Extracted Lyrics Of {song} 🎶**\n\n\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Made With ❤️ By @EKBOTZ_UPDATE**'
+        text += '\n\n\n**Made With ❤️ By @gangsterbotschannel**'
         return text
 
 
